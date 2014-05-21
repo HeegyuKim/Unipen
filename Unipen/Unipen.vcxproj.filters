@@ -16,6 +16,9 @@
     <Filter Include="Window">
       <UniqueIdentifier>{bb2fe476-7d7c-4149-bfba-7973778ae888}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{d30d257f-8216-4abf-bd85-8d62750223d9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector2.h">
@@ -42,6 +45,9 @@
     <ClInclude Include="Window.h">
       <Filter>Window</Filter>
     </ClInclude>
+    <ClInclude Include="FontManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -49,6 +55,9 @@
     </ClCompile>
     <ClCompile Include="Window.cpp">
       <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="FontManager.cpp">
+      <Filter>Manager</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

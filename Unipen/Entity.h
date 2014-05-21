@@ -16,5 +16,17 @@ public:
 
 };
 
+template <typename T>
+inline void SafeRelease(T t) {
+	if(t)
+		t->Release();
+}
+
+template <typename T>
+inline void SafeDelete(T t) {
+	if(t)
+		delete t;
+}
+
 }
 #endif
