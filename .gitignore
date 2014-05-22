@@ -1,5 +1,9 @@
 *.opensdf
 *.sdf
+<<<<<<< HEAD
+=======
+*.suo
+>>>>>>> heegyu
 Debug/
 Release/
 Unipen/Debug/

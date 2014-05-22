@@ -85,6 +85,7 @@
     <ClInclude Include="Bitmap.h" />
     <ClInclude Include="BitmapManager.h" />
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="FontManager.h" />
     <ClInclude Include="maths.h" />
     <ClInclude Include="Maths.hpp" />
     <ClInclude Include="Polar.h" />
@@ -95,8 +96,12 @@
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClCompile Include="Bitmap.cpp" />
     <ClCompile Include="BitmapManager.cpp" />
+=======
+    <ClCompile Include="FontManager.cpp" />
+>>>>>>> heegyu
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>

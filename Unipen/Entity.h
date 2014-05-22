@@ -17,11 +17,24 @@ public:
 };
 
 template <typename T>
+<<<<<<< HEAD
 inline void SafeRelease(T t) 
 {
+=======
+inline void SafeRelease(T t) {
+>>>>>>> heegyu
 	if(t)
 		t->Release();
 }
 
+<<<<<<< HEAD
+=======
+template <typename T>
+inline void SafeDelete(T t) {
+	if(t)
+		delete t;
+}
+
+>>>>>>> heegyu
 }
 #endif

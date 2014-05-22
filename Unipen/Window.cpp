@@ -179,7 +179,7 @@ LRESULT Window::ProcessMessage(UINT msg, WPARAM wp, LPARAM lp) {
 
 void Run() {
 	MSG msg = {0};
-	while(msg.message != WM_QUIT) {
+	while(GetMessage(&msg, 0, 0, 0)) {
 		TranslateMessage(&msg);
 		DispatchMessage(&msg);
 	}

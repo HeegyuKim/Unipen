@@ -16,11 +16,16 @@
     <Filter Include="Window">
       <UniqueIdentifier>{bb2fe476-7d7c-4149-bfba-7973778ae888}</UniqueIdentifier>
     </Filter>
+<<<<<<< HEAD
     <Filter Include="Managers">
       <UniqueIdentifier>{dd18ebfe-4541-45c8-940b-da9ca4b1cd5c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resource">
       <UniqueIdentifier>{a713e1fc-20ad-4c11-9922-4c3daa603c72}</UniqueIdentifier>
+=======
+    <Filter Include="Manager">
+      <UniqueIdentifier>{d30d257f-8216-4abf-bd85-8d62750223d9}</UniqueIdentifier>
+>>>>>>> heegyu
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +53,7 @@
     <ClInclude Include="Window.h">
       <Filter>Window</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="BitmapManager.h">
       <Filter>Managers</Filter>
     </ClInclude>
@@ -59,6 +65,10 @@
     </ClInclude>
     <ClInclude Include="AudioBuffer.h">
       <Filter>Managers</Filter>
+=======
+    <ClInclude Include="FontManager.h">
+      <Filter>Manager</Filter>
+>>>>>>> heegyu
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -68,11 +78,16 @@
     <ClCompile Include="Window.cpp">
       <Filter>Window</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="BitmapManager.cpp">
       <Filter>Managers</Filter>
     </ClCompile>
     <ClCompile Include="Bitmap.cpp">
       <Filter>Resource</Filter>
+=======
+    <ClCompile Include="FontManager.cpp">
+      <Filter>Manager</Filter>
+>>>>>>> heegyu
     </ClCompile>
   </ItemGroup>
 </Project>
