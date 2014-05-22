@@ -21,7 +21,7 @@ public:
 	 *@brief 싱글톤을 반환하는 메서드
 	 *@return BitmapManager의 싱글톤
 	 */
-	inline std::shared_ptr<BitmapManager> GetInstance() { return s_instance; }
+	inline static std::shared_ptr<BitmapManager> GetInstance() { return s_instance; }
 
 	/**@brief 비트맵들을 보관하는 지도 자료구조의 타입을 정의한다. */
 	typedef std::map<std::wstring, ID2D1Bitmap*> BitmapMap;
@@ -29,17 +29,19 @@ public:
 private:
 	static std::shared_ptr<BitmapManager> s_instance; ///< BitmapManager클래스의 싱글톤
 
-public:
+private:
 	///< 기본 생성자.
 	BitmapManager();
 	
+public:
+	///< 소멸자
 	virtual ~BitmapManager();
 
 	bool Load(LPCWSTR key, LPCWSTR filename, bool overwrite = true);
 	
 	bool Load(LPCWSTR key, void* data, UINT size, bool overwrite = true);
 	
-	bool Add(LPCWSTR key, ID2D1Bitmap* bitmap);
+	bool Add(LPCWSTR key, ID2D1Bitmap* bitmap, bool overwrite = true);
 	
 	bool Get(LPCWSTR key, ID2D1Bitmap** bitmap);
 
@@ -69,6 +71,12 @@ public:
 	///< 렌더 타겟 객체를 반환한다.
 	inline ID2D1RenderTarget* GetRenderTarget() { return m_rt; }
 	
+	/**
+	 *@brief 렌더 타겟을 설정한다.
+	 *@param rt 설정할 렌더 타겟
+	 */
+	inline void SetRenderTarget(ID2D1RenderTarget* rt) { m_rt = rt; }
+
 	///< 렌더 타겟 객체를 반환한다.
 	inline const ID2D1RenderTarget* GetRenderTarget() const { return m_rt; }
 
@@ -93,7 +101,7 @@ HRESULT LoadBitmap(IWICImagingFactory* imagingFactory,
 
 HRESULT LoadBitmap(IWICImagingFactory* imagingFactory, 
 				   ID2D1RenderTarget* rt,
-				   void** data,
+				   void* data,
 				   UINT size,
 				   ID2D1Bitmap** bitmap );
 

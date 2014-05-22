@@ -81,16 +81,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AudioBuffer.h" />
+    <ClInclude Include="Bitmap.h" />
+    <ClInclude Include="BitmapManager.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="maths.h" />
     <ClInclude Include="Maths.hpp" />
     <ClInclude Include="Polar.h" />
+    <ClInclude Include="SoundManager.h" />
     <ClInclude Include="Units.h" />
     <ClInclude Include="Vector2.h" />
     <ClInclude Include="Vector2.hpp" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Bitmap.cpp" />
+    <ClCompile Include="BitmapManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>

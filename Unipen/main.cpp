@@ -9,7 +9,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
 	Window window(L"Hello world");
 
-	window.SetVisible(true);
+	window.SetState(SW_SHOW);
 	window.SetQuitOnDestroy(true);
 	
 	Run();

@@ -16,6 +16,12 @@
     <Filter Include="Window">
       <UniqueIdentifier>{bb2fe476-7d7c-4149-bfba-7973778ae888}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{dd18ebfe-4541-45c8-940b-da9ca4b1cd5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{a713e1fc-20ad-4c11-9922-4c3daa603c72}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector2.h">
@@ -42,6 +48,18 @@
     <ClInclude Include="Window.h">
       <Filter>Window</Filter>
     </ClInclude>
+    <ClInclude Include="BitmapManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Bitmap.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioBuffer.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -49,6 +67,12 @@
     </ClCompile>
     <ClCompile Include="Window.cpp">
       <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="BitmapManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Bitmap.cpp">
+      <Filter>Resource</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
