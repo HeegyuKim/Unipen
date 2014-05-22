@@ -12,7 +12,7 @@
 namespace unipen {
 
 
-	struct AudioBuffer 
+	struct SoundBuffer 
 	{
 		WAVEFORMATEXTENSIBLE wfx;
 		void* data;

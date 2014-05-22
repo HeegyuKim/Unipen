@@ -13,81 +13,87 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Window">
-      <UniqueIdentifier>{bb2fe476-7d7c-4149-bfba-7973778ae888}</UniqueIdentifier>
+    <Filter Include="Math &amp; Physics">
+      <UniqueIdentifier>{d0d8a871-7d88-4993-bc27-88b656f92d60}</UniqueIdentifier>
     </Filter>
-<<<<<<< HEAD
-    <Filter Include="Managers">
-      <UniqueIdentifier>{dd18ebfe-4541-45c8-940b-da9ca4b1cd5c}</UniqueIdentifier>
+    <Filter Include="Computer Graphics">
+      <UniqueIdentifier>{8dc418d0-bfeb-450c-bc9b-bdbd3eb798df}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource">
-      <UniqueIdentifier>{a713e1fc-20ad-4c11-9922-4c3daa603c72}</UniqueIdentifier>
-=======
-    <Filter Include="Manager">
-      <UniqueIdentifier>{d30d257f-8216-4abf-bd85-8d62750223d9}</UniqueIdentifier>
->>>>>>> heegyu
+    <Filter Include="Computer Graphics\Window">
+      <UniqueIdentifier>{d188ee79-73d2-4d62-999b-d2a8fa245e93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Computer Graphics\Managers">
+      <UniqueIdentifier>{fab70982-4b40-4abe-b5be-f10113d1d3d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Computer Graphics\Resources">
+      <UniqueIdentifier>{124d3a19-fdc4-4fe1-847c-ddf87d213222}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Vector2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Units.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Entity.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Vector2.hpp">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Polar.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="maths.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Maths.hpp">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Window.h">
-      <Filter>Window</Filter>
-    </ClInclude>
-<<<<<<< HEAD
     <ClInclude Include="BitmapManager.h">
-      <Filter>Managers</Filter>
+      <Filter>Computer Graphics\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="FontManager.h">
+      <Filter>Computer Graphics\Managers</Filter>
     </ClInclude>
     <ClInclude Include="SoundManager.h">
-      <Filter>Managers</Filter>
+      <Filter>Computer Graphics\Managers</Filter>
     </ClInclude>
     <ClInclude Include="Bitmap.h">
-      <Filter>Resource</Filter>
+      <Filter>Computer Graphics\Resources</Filter>
     </ClInclude>
-    <ClInclude Include="AudioBuffer.h">
-      <Filter>Managers</Filter>
-=======
-    <ClInclude Include="FontManager.h">
-      <Filter>Manager</Filter>
->>>>>>> heegyu
+    <ClInclude Include="Window.h">
+      <Filter>Computer Graphics\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths.hpp">
+      <Filter>Math &amp; Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="maths.h">
+      <Filter>Math &amp; Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Polar.h">
+      <Filter>Math &amp; Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Units.h">
+      <Filter>Math &amp; Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Math &amp; Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.hpp">
+      <Filter>Math &amp; Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Computer Graphics\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundBuffer.h">
+      <Filter>Computer Graphics\Resources</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>Window</Filter>
+    <ClCompile Include="FontManager.cpp">
+      <Filter>Computer Graphics\Managers</Filter>
     </ClCompile>
-<<<<<<< HEAD
     <ClCompile Include="BitmapManager.cpp">
-      <Filter>Managers</Filter>
+      <Filter>Computer Graphics\Managers</Filter>
     </ClCompile>
     <ClCompile Include="Bitmap.cpp">
-      <Filter>Resource</Filter>
-=======
-    <ClCompile Include="FontManager.cpp">
-      <Filter>Manager</Filter>
->>>>>>> heegyu
+      <Filter>Computer Graphics\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Computer Graphics\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>Computer Graphics\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Computer Graphics\Resources</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
