@@ -81,7 +81,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Algorithm.h" />
+    <ClInclude Include="ArrayList.h" />
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="LinkedList.h" />
     <ClInclude Include="maths.h" />
     <ClInclude Include="Maths.hpp" />
     <ClInclude Include="Polar.h" />
