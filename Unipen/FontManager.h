@@ -24,7 +24,7 @@ namespace unipen {
 class FontManager : public Entity {
 public:
 	///< FontManager Å¬·¡½ºÀÇ ½Ì±ÛÅæ °´Ã¼¸¦ ¹ÝÈ¯ÇÑ´Ù.
-	inline static std::shared_ptr<FontManager> GetInstance() _do(s_instance);
+	inline static std::shared_ptr<FontManager> GetInstance() _is(s_instance);
 
 	typedef std::map<std::wstring, IDWriteTextFormat*> FontMap;
 

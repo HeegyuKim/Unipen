@@ -3,7 +3,10 @@
 #include "FontManager.h"
 
 using namespace unipen;
+using namespace std;
 
+
+shared_ptr<FontManager> FontManager::s_instance(new FontManager);
 
 HRESULT unipen::LoadFont(
 	IDWriteFactory* factory, 

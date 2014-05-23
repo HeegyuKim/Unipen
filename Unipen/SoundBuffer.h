@@ -15,8 +15,7 @@ namespace unipen {
 	struct SoundBuffer 
 	{
 		WAVEFORMATEXTENSIBLE wfx;
-		void* data;
-		UINT dataSize;
+		XAUDIO2_BUFFER buffer;
 	};
 
 }

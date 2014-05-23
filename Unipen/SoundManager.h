@@ -31,13 +31,30 @@ public:
 	typedef std::map<std::wstring, std::shared_ptr<SoundBuffer>> BufferMap;
 
 private:
+	///< 클래스의 싱글톤
 	static std::shared_ptr<SoundManager> s_instance;
 
 	///< XAudio2 초기화를 수행하는 기본 생성자.
 	SoundManager();
+
 public:
 	///< 자원들을 해제하는 기본 파괴자
 	virtual ~SoundManager();
+
+	bool CreateVoice(LPCWSTR key, IXAudio2SourceVoice** voice);
+
+	bool Get(LPCWSTR key, std::shared_ptr<SoundBuffer>& buffer);
+
+	bool Remote(LPCWSTR key);
+
+	bool Has(LPCWSTR key);
+
+	bool Add(LPCWSTR key, std::shared_ptr<SoundBuffer> buffer, bool overwrite = true);
+
+	bool Load(LPCWSTR key, LPCWSTR filename, bool overwrite = true);
+
+	bool Load(LPCWSTR key, void* data, UINT size, bool overwrite);
+
 
 	///< XAudio2 객체를 반환한다.
 	IXAudio2* GetXAudio2() const { return m_xaudio2; }
@@ -48,10 +65,15 @@ public:
 private:
 	CComPtr<IXAudio2> m_xaudio2; ///< XAudio2 객체
 	
-	CComPtr<IXAudio2MasteringVoice> m_masteringVoice; ///< 마스터보이스 객체
+	IXAudio2MasteringVoice* m_masteringVoice; ///< 마스터보이스 객체
 
 	BufferMap m_buffers; ///< 사운드 버퍼 모음
 };
+
+HRESULT LoadSoundBuffer(IXAudio2* xaudio2, LPCWSTR filename, SoundBuffer& buffer);
+
+
+HRESULT LoadSoundBuffer(IXAudio2* xaudio2, void* data, UINT size, SoundBuffer& buffer);
 
 
 }
