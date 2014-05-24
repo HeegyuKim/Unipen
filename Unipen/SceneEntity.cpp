@@ -1,11 +1,19 @@
 #include "SceneEntity.h"
 
-
-SceneEntity::SceneEntity(void)
+namespace unipen
 {
-}
+	SceneEntity::SceneEntity(void)
+	{
+	}
 
 
-SceneEntity::~SceneEntity(void)
-{
+	SceneEntity::~SceneEntity(void)
+	{
+	}
+	void SceneEntity::Update(float eTime)
+	{
+	}
+	void SceneEntity::Render()
+	{
+	}
 }

@@ -12,14 +12,16 @@ namespace unipen
 
 		void Scene::Update(float eTime)
 		{
-			for(LAYERLIST::iterator iter = m_LayerList.begin(); iter != m_LayerList.end(); iter++)
-				iter->second->Update(eTime) ;
+			for(auto iter : m_LayerList)
+				iter.second->Update(eTime) ;
+
+			ProcessPopLayer() ;
 		}
 		
 		void Scene::Render()
 		{
-			for(LAYERLIST::iterator iter = m_LayerList.begin(); iter != m_LayerList.end(); iter++)
-				iter->second->Render() ;
+			for(auto iter : m_LayerList)
+				iter.second->Render() ;
 		}
 
 		void Scene::AddLayer(Layer* _iNewLayer, std::string _iLayerName)
@@ -40,9 +42,14 @@ namespace unipen
 			if(PopLayer == m_LayerList.end())
 				return nullptr ;
 
-			Layer* ReturnLayer = PopLayer->second ;
-			m_LayerList.erase(PopLayer) ;
+			m_PopLayerList.push_back(PopLayer) ;
+			return PopLayer->second ;
+		}
+		void Scene::ProcessPopLayer()
+		{
+			for(auto iter : m_PopLayerList)
+				m_LayerList.erase(iter) ;
 
-			return ReturnLayer ;
+			m_PopLayerList.clear() ;
 		}
 }

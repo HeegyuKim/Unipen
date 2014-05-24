@@ -15,7 +15,9 @@ namespace unipen
 	{
 	private:
 		typedef std::map<std::string, Layer*> LAYERLIST ;
+		typedef std::list<LAYERLIST::iterator> POPLAYERLIST ;
 		LAYERLIST m_LayerList ;
+		POPLAYERLIST m_PopLayerList ;
 	public:
 		Scene(void) ;
 		virtual ~Scene(void) ;
@@ -30,7 +32,7 @@ namespace unipen
 		//!brief 갖고있는 모든 Layer들의 Render함수를 호출해준다.
 		virtual void Render() ;
 
-	private:
+	public:
 		/**
 		 *@brief 레이어를 추가한다.
 		 *@param _iNewLayer 새로운 레이어
@@ -49,6 +51,13 @@ namespace unipen
 		 *@return 빼낸 레이어, 이름에 해당하는 레이어가 없다면 nullptr 리턴
 		 */
 		Layer* PopLayer(std::string _iLayerName) ;
+
+	private:
+		/**
+		 *@brief Update도중 Layer가 빠지면 순회도중 오류가 날 가능성이 있기 때문에
+		 순회를 모두 마친 후 한번에 몰아서 빼준다.
+		 */
+		void ProcessPopLayer() ;
 	} ;
 }
 

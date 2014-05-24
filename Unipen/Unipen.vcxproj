@@ -82,15 +82,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="Layer.h" />
     <ClInclude Include="maths.h" />
     <ClInclude Include="Maths.hpp" />
     <ClInclude Include="Polar.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneEntity.h" />
+    <ClInclude Include="SceneManager.h" />
     <ClInclude Include="Units.h" />
     <ClInclude Include="Vector2.h" />
     <ClInclude Include="Vector2.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Layer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneEntity.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
