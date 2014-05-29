@@ -18,6 +18,9 @@ namespace unipen
 		typedef std::list<ENTITYLIST::iterator> POPENTITYLIST ;
 		ENTITYLIST m_EntityList ;
 		POPENTITYLIST m_PopEntityList ;
+
+		bool m_bVisible ;
+		bool m_bActive ;
 	public:
 		Layer(void);
 		virtual ~Layer(void);
@@ -58,6 +61,13 @@ namespace unipen
 		 순회를 모두 마친 후 한번에 몰아서 빼준다.
 		 */
 		void ProcessPopEntity() ;
+
+	public:
+		void SetVisibleState(bool _iVisible) ;
+		bool GetVisibleState() ;
+
+		void SetActiveState(bool _iActive) ;
+		bool GetActiveState() ;
 	} ;
 }
 #endif
