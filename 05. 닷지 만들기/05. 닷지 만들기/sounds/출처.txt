@@ -1,0 +1,17 @@
+사운드 파일들의 출처입니다.
+
+- bgm.wav
+"Fly Guy"
+http://www.freestockmusic.com/2014/hip-hop-production-music/free-hip-hop-stock-music-fly-guy/
+
+- envoy.wav
+https://www.freesound.org/people/ecfike/sounds/154504/
+
+- devil.wav
+https://www.freesound.org/people/timtube/sounds/69340/
+
+- pirate.wav
+https://www.freesound.org/people/klankbeeld/sounds/192575/
+
+- gameover.wav
+https://www.freesound.org/people/jivatma07/sounds/173859/
