@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Play2D Streaming", "Play2D Streaming\Play2D Streaming.vcxproj", "{3312DB9B-A35B-4F67-9700-27D778E9732F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Play2D Source", "Play2D Source\Play2D Source.vcxproj", "{2A6A53AB-3F20-49B8-B056-2FC0A5C8D200}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sound Control", "Sound Control\Sound Control.vcxproj", "{1DC187AC-B195-4976-A08D-EF342690080D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3312DB9B-A35B-4F67-9700-27D778E9732F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3312DB9B-A35B-4F67-9700-27D778E9732F}.Debug|Win32.Build.0 = Debug|Win32
+		{3312DB9B-A35B-4F67-9700-27D778E9732F}.Release|Win32.ActiveCfg = Release|Win32
+		{3312DB9B-A35B-4F67-9700-27D778E9732F}.Release|Win32.Build.0 = Release|Win32
+		{2A6A53AB-3F20-49B8-B056-2FC0A5C8D200}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2A6A53AB-3F20-49B8-B056-2FC0A5C8D200}.Debug|Win32.Build.0 = Debug|Win32
+		{2A6A53AB-3F20-49B8-B056-2FC0A5C8D200}.Release|Win32.ActiveCfg = Release|Win32
+		{2A6A53AB-3F20-49B8-B056-2FC0A5C8D200}.Release|Win32.Build.0 = Release|Win32
+		{1DC187AC-B195-4976-A08D-EF342690080D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1DC187AC-B195-4976-A08D-EF342690080D}.Debug|Win32.Build.0 = Debug|Win32
+		{1DC187AC-B195-4976-A08D-EF342690080D}.Release|Win32.ActiveCfg = Release|Win32
+		{1DC187AC-B195-4976-A08D-EF342690080D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
